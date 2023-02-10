@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr,td,th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .asterisco{
+            color:red
+        }
+        .workHoursTo{
+            float: right;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nota: el campo de "expiry date" es un campo de mes-año. En Ubuntu, en Firefox no renderiza apropiadamente. Sin embargo,
+        en Chrome funciona como corresponde.
+    -->
+    <form action="#">
+        <table>
+            <tr>
+                <th rowspan="14"></th>
+                <th>Personal identification</th>
+                <th rowspan="14"></th>
+                <th>Employee Identification</th>
+                <th rowspan="14"></th>
+                <th>Education</th>
+                <th rowspan="14"></th>
+                <th>Languages</th>
+                <th rowspan="14"></th>
+                <th>Payment method</th>
+                <th rowspan="14"></th>
+                <th>Personal preferences</th>
+                <th rowspan="14"></th>
+                <th>Other</th>
+                <th rowspan="14"></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name <span class="asterisco">*</span></label>
+                    <input type="text" name="name" id="name" required>
+                </td>
+                <td>
+                    <label for="company">Company <span class="asterisco">*</span></label>
+                    <input type="text" name="company" id="company"required>
+                </td>
+                <td rowspan="13">
+                    <label for="edLevel">Education level <span class="asterisco">*</span></label>
+                    <select name="edLevel" id="edLevel" required>
+                        <optgroup label="Education Level">
+                            <option value="none">None</option>
+                            <option value="primary">Primary School</option>
+                            <option value="secondary">High School</option>
+                            <option value="tech">FP/Trade School</option>
+                            <option value="college">College degree</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="doctoral">Doctorate</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td rowspan="13">
+                    <label for="english">English <span class="asterisco">*</span></label>
+                    <input type="range" min="1" max="5" value="1" name="english" id="english" required><br>
+                    <label for="spanish">Spanish</label>
+                    <input type="range" min="1" max="5" value="1" name="spanish" id="spanish"><br>
+                    <label for="catalan">Catalan</label>
+                    <input type="range" min="1" max="5" value="1" name="catalan" id="catalan"><br><br>
+                    <label for="others">Others</label>
+                    <input type="text" name="others" id="others">
+                </td>
+                <td>
+                    <input type="radio" id="VISA" name="cardtype" value="visa">
+                    <label for="visa">VISA</label><br>
+                    <input type="radio" name="cardtype" id="amex" value="americanExpress">
+                    <label for="amex">American Express</label><br>
+                    <input type="radio" id="mastercard" name="cardtype" value="mastercard">
+                    <label for="visa">MasterCard</label><br>
+                    <input type="radio" name="cardtype" id="unionPay" value="unionPay">
+                    <label for="amex">UnionPay</label>
+                </td>
+                <td>
+                    <label for="color">Favorite color</label>
+                    <input type="color" name="color" id="color">
+                </td>
+                <td rowspan="13">
+                    <label for="personalPrefs">Personal preferences</label>
+                    <textarea name="personalPrefs" id="personalPrefs" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="surname">Surname <span class="asterisco">*</span></label>
+                    <input type="text" name="surname" id="surname"required>
+                </td>
+                <td>
+                    <label for="employeeNum">Employee number <span class="asterisco">*</span></label>
+                    <input type="number" name="employeeNum" id="employeeNum"required>
+                </td>
+                <td>
+                    <label for="cardNumber">Card Number</label>
+                    <input type="number" name="cardNumber" id="cardNumber" maxlength="20" pattern="[0-9]{13,16}" placeholder="XXXX-XXXX-XXXX">
+                </td>
+                <td>
+                    <p>Social networks</p>
+                    <label for="socialFacebook">Facebook</label>
+                    <input type="url" name="socialFacebook" id="socialFacebook">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label> <span class="asterisco">*</span>
+                    <select name="genderSelect" id="genderSelect" value="Gender" required>
+                        <optgroup label="Gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+                </td>
+                <td>
+                    <label for="username">Username <span class="asterisco">*</span></label>
+                    <input type="text" name="username" id="username"required>
+                </td>
+                <td>
+                    <label for="cvc">CVC/CVV</label>
+                    <input type="number" name="cvc" id="cvc" maxlength="3">
+                </td>
+                <td>
+                    <label for="socialLinkedin">LinkedIn</label>
+                    <input type="url" name="socialLinkedin" id="socialLinkedin">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="postalAddress">Postal address</label>
+                    <input type="text" name="postalAddress" id="postalAddress">
+                </td>
+                <td>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </td>
+                <td>
+                    <label for="expDate">Expiry date</label>
+                    <input type="month" name="expDate" id="expDate" min="2023-02">
+                </td>
+                <td>
+                    <label for="socialInsta">Instagram</label>
+                    <input type="url" name="socialInsta" id="socialInsta">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zipCode">ZIP Code</label>
+                    <input type="number" name="zipCode" id="zipCode" maxlength="5">
+                </td>
+                <td><label for="department">Department <span class="asterisco">*</span></label>
+                    <input type="text" name="department" id="department"required>
+                   
+                </td>
+                <td rowspan="9"></td>
+                <td rowspan="9"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="idNum">ID Number</label>
+                    <input type="text" name="idNum" id="idNum" required pattern="[0-9]{8}[A-Za-z]{1}">
+                </td>
+                <td> <label for="startDate">Start date <span class="asterisco">*</span></label>
+                    <input type="date" name="startDate" id="startDate" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email <span class="asterisco">*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </td>
+                <td>
+                    <label for="workHours">Work hours</label><br>
+                    <label for="workHoursFrom">From</label>
+                    <label for="workHoursTo" class="workHoursTo">To</label><br>
+                    <input type="time" name="workHoursFrom" id="workHours">
+                    <input type="time" name="workHoursTo" id="workHours">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phoneNum">Phone</label>
+                    <input type="number" name="phoneNum" id="phoneNum" placeholder="XXX-XXX-XXX">
+                </td>
+                <td rowspan="6"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobileNum">Mobile number <span class="asterisco">*</span></label>
+                    <input type="number" name="mobileNum" id="mobileNum" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" name="birthdate" id="birthdate" min="1920-01-01" max="2023-02-06">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="placeofbirth">Place of birth</label>
+                    <input type="text" name="placeofbirth" id="placeofbirth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="countryofbirth">Country of birth</label><br>
+                    <select name="countryofbirth" id="countryofbirth">
+                        <option value="esp">Spain</option>
+                        <option value="por">Portugal</option>
+                        <option value="ita">Italy</option>
+                        <option value="gre">Greece</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="maritalStatus">Marital Status <span class="asterisco">*</span></label><br>
+                    <input type="radio" name="maritalStatus" id="single" value="Single" required="required">
+                    <label for="single">Single</label><br>
+                    <input type="radio" name="maritalStatus" id="married">
+                    <label for="married">Married</label><br>
+                    <input type="radio" name="maritalStatus" id="divorced">
+                    <label for="divorced">Divorced</label>
+                </td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

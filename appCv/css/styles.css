@@ -1,0 +1,46 @@
+*{margin:0;padding: 0;}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#div{
+    height: 100%;
+    width: 100%;
+}
+
+.img-thumbnail{
+    width: 25%;
+    float:left;
+}
+
+.textoArriba{
+    float:left;
+    margin-left: 2%;
+    width: 70%;
+}
+
+.textoArriba p{
+    margin-bottom: 0.2rem;
+}
+p{
+    margin-bottom: 0.7rem;
+}
+
+.links,.links:hover,.links:active{
+    text-decoration: none;
+}
+
+.divider{
+    border-top: 2px solid black;
+    width: 100%;
+    clear: both;
+    margin-top: 31%;
+}
+
+.dividerMid{
+    border-top: 2px solid black;
+    width: 100%;
+    clear: both;
+    margin-top: 1%;
+}

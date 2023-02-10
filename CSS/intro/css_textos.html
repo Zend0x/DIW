@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de texto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .radioFutura{
+            margin-top: 2%;
+            margin-left: 2%;
+        }
+        .lineaBlanca{
+            border-top: 5px solid white;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1.radioFutura span:nth-child(odd){
+            color: black;
+        }
+        h1.radioFutura span:nth-child(even){
+            color: white;
+        }
+        .contenedor{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(170, 170, 170);
+            padding: 1%;
+        }
+        .texto{
+            background-color: rgb(170, 170, 170);
+            height: 80%;
+            width: 95%;
+            margin-left: 1%;
+            border-top:10px solid white;
+            border-left:10px solid white;
+            border-right:10px solid black;
+            border-bottom:10px solid black;
+        }
+        .parrafo{
+            width: 50%;
+            margin-left: 10%;
+            margin-bottom:2%;
+            margin-top: 1%;
+            padding: 5px;
+            background-color: white;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+        }
+        .textoArribaAbajo{
+            text-decoration: 1px solid black underline overline;
+        }
+        .grisCursiva{
+            background-color: rgb(175, 175, 175);
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="texto">
+            <h1 class="radioFutura">
+                <span>H</span><span>A</span><span>N </span>
+                <span>C</span><span>A</span><span>I</span><span>D</span><span>O </span>
+                <span>L</span><span>O</span><span>S </span>
+                <span>D</span><span>O</span><span>S </span>
+                <span>(R</span><span>A</span><span>D</span><span>I</span><span>O </span>
+                <span>F</span><span>U</span><span>T</span><span>U</span><span>R</span><span>A)</span>
+            </h1>
+            <p class="lineaBlanca">&nbsp;</p>
+            <p class="parrafo">
+                Han caído los dos cual soldados <span class="textoArribaAbajo">fulminados</span> al suelo.<br>
+                Y ahora están <span class="textoArribaAbajo">atrapados</span> los dos en la misma prisión.<br>
+                Vigilados por el ojo incansable del deseo voraz.<br>
+                Sometidos a una insoportable tensión de silencio.
+            </p>
+            <p class="parrafo">
+                Han caído los dos bajo el punto de vista exclusivo.<br>
+
+                Iniciando una <span class="grisCursiva">guerra</span> en que nadie pudo vencer jamás.<br>
+                Ella sabe lo que el hombre espera sin haberlo aprendido<br>
+
+                Y él encuentra sentido al <span class="grisCursiva">enigma</span> que no le dejaba existir.
+            </p>
+            <p class="parrafo">
+                Antes eran dos barcos sin rumbo, hoy son dos <span class="grisCursiva">marionetas</span> que van.<br>
+                Persiguiendo una luz <span class="textoArribaAbajo">cegadora</span> por la línea del tiempo.
+            </p>
+            <p class="parrafo">
+                Han caído los dos en la boca de un dios <span class="textoArribaAbajo">tenebroso</span>.<br>
+                Que sonríe mostrando sus <span class="grisCursiva">dientes</span> de acero.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

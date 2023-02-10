@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        *{
+            color: yellowgreen;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: green;
+        }
+        #id1{
+            text-align: left;
+            color: blue;
+        }
+        .toRight{
+            text-align: right;
+            color: blueviolet;
+        }
+        .large{
+            font-size: 300%;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is affected by the universal selector</h1>
+    <p>This is affected by the p selector</p>
+    <p id="id1">This is affected by the id1 selector</p>
+    <p class="toRight">This text is affected by the toRight class selector</p>
+    <p class="toRight large">This text is affected by 2 different classes</p>
+</body>
+</html>

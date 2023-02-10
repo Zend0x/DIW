@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de 3 x 3</title>
+    <style>
+        table{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+        }
+        td{
+            border: 1px solid black;
+        }
+        tr{
+            height: 50px;
+            text-align: center;
+        }
+
+        .terceraTabla{
+            width: 90%;
+            border-collapse: collapse;
+        }
+        #grande{
+            height: 300px;
+        }
+        #medio{
+            height: 150px;
+        }
+        #pequeño td{
+            height: 100px;
+        }
+        #enano{
+            height: 50px;
+        }
+        #enano td{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table style="border: 1px solid black;">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2"rowspan="2">4 5<br>7 8</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <td>1</td>
+            <td colspan="2" rowspan="2">2 3<br>&nbsp&nbsp&nbsp6</td>
+        </tr>
+        <tr>
+            <td colspan="2"rowspan="2">4 5<br>7 8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <table class="terceraTabla">
+        <tr id="enano">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="6" id="grande"></td>
+        </tr>
+        <tr id="pequeño">
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="6" id="medio"></td>
+        </tr>
+        <tr>
+            <td colspan="6" id="enano"></td>
+        </tr>
+        <tr id="grande">
+            <td colspan="3"></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
