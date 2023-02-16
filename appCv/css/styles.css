@@ -44,3 +44,27 @@ p{
     clear: both;
     margin-top: 1%;
 }
+
+.tituloPagina{
+    float: left;
+}
+
+.flechaAtras,.flechaAtras:link,.flechaAtras:visited{
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+.titulacion h1, .titulacion p{
+    margin-bottom: .1rem;
+}
+.titulacion{
+    margin-bottom: 1.5rem;
+}
+
+.trabajo h1, .trabajo p{
+    margin-bottom: .1rem;
+}
+.trabajo{
+    margin-bottom: 1.5rem;
+}
