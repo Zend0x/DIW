@@ -68,3 +68,12 @@ p{
 .trabajo{
     margin-bottom: 1.5rem;
 }
+
+.iconos{
+    margin-left: 37%;
+}
+.iconos svg{
+    margin-top: 65%;
+    margin-right: 10%;
+    color: black;
+}
